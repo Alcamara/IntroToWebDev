@@ -17,23 +17,29 @@
   </nav>
   <main>
     <body>
-      <section align="center">
-        <form class="contact" action="index.html" method="post">
-          <label for="name">Name:</label>
-            <input type="text" name="name" id="name" minlengh="3" maxlength="16" required>
+      <section align="center" class="overlay">
+        <form  action="/index.html" method="post">
+          <section class="contact_name">
+              <label for="name">Name:</label>
+                <input type="text" name="name" id="name" minlengh="3" maxlength="16" required>
+          </section>
           <br>
           <br>
-          <label for="email">Email:</label>
-            <input type="text" name="email" id="email" required>
+          <section class="contact_email">
+              <label for="email">Email:</label>
+                <input type="text" name="email" id="email" required>
+          </section>
           <br>
           <br>
-          <label for="phone">Phone Number:</label>
-            <input type="text" name="phone" id="phone" required  pattern="[0-9]{10}">
+          <section class="contact_number">
+              <label for="phone">Phone Number:</label>
+                <input type="text" name="phone" id="phone" required  pattern="[0-9]{10}">
+          </section>
           <br>
           <br>
-          <section class="reason">
+          <section class="contact_reason">
             <label for="reason">Reason for Inquiry:</label>
-              <select class="review" name="review">
+              <select id="reason" name="reason">
                 <option value="catering">Catering</option>
                 <option value="party">Private Party</option>
                 <option value="feedback">Feedback</option>
@@ -41,40 +47,43 @@
               </select>
           </section>
           <br>
-          <section class="info">
-            <label for="info">Additional Information:</label>
-              <textarea name="info" id="info" rows="8" cols="25"></textarea>
-            <br>
-            <br>
-            <label for="restaurant">Have you been to the restaurant?</label>
-              <input type="radio" name="yes" value="yes">
-                <label for="yes">Yes</label>
+          <section class="contact_add_Info">
+              <label for="info">Additional Information:</label>
+                <textarea name="info" id="info" rows="8" cols="25"></textarea>
+          </section>
+          <br>
+          <br>
+          <section class="contact_have_u_been">
+              <label for="restaurant">Have you been to the restaurant?</label>
 
-              <input type="radio" name="no" value="no">
-                <label for="no">No</label>
+                <input type="radio" id="yes" name="yes" value="yes">
+                  <label for="yes">Yes</label>
+
+                <input type="radio" id="no" name="no" value="no">
+                  <label for="no">No</label>
           </section>
            <br>
            <br>
-          <section class="best_days">
+          <section class="contact_best_day">
             <label for="best_days">Best days to contact you:</label>
-              <input type="checkbox" name="best_days" value="m">
+              <input type="checkbox"  id="m" name="contact_best_day" value="m">
                 <label for="m">M</label>
 
-              <input type="checkbox" name="best_days" value="t">
+              <input type="checkbox" id="t" name="contact_best_day" value="t">
                 <label for="t">T</label>
 
-              <input type="checkbox" name="best_days" value="w">
+              <input type="checkbox" id="w" name="contact_best_day" value="w">
                 <label for="w">W</label>
 
-              <input type="checkbox" name="best_days" value="th">
+              <input type="checkbox" id="th" name="contact_best_day" value="th">
                 <label for="th">Th</label>
 
-              <input type="checkbox" name="best_days" value="f">
+              <input type="checkbox" id="f" name="contact_best_day" value="f">
                 <label for="f">F</label>
           </section>
             <br>
-          <section class="request">
-            <input type="submit" name="request" value="Send Request">
+          <section class="send_request">
+            <input type="submit" value="Send Request">
           </section>
         </form>
       </section>
