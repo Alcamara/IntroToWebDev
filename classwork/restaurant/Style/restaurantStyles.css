@@ -1,5 +1,6 @@
 body {
   background-color: #f2f4f3;
+
 }
 
 header {
@@ -9,19 +10,30 @@ header {
 nav {
   background-color: #086788;
   height: 60px;
+  position:relative;
+  bottom: 70px;
 
+}
+
+figure {
+  margin: 0 auto;
 }
 
 footer {
-  background-color: #f0c808;
-  color: #086788;
+  background-color:  #086788;
+
 }
+
+
 
 
 
 figure img[src*='Grace.jpg'] {
   width: 40%;
   height: auto;
+  position: relative;
+  left: 30%;
+
 
 }
 
@@ -30,8 +42,25 @@ a {
    color: #086788;
 }
 
+ #description {
+   background-color:#086788;
+   font-size: 20px;
+   width: 40%;
+   height: auto;
+   padding: 10px;
+   margin: 0 auto;
+   border-style: dashed;
+   border-top-left-radius: 40px;
+   border-top-right-radius: 40px;
+   margin-top: 10px;
+}
+
 a:hover {
    color: #f2f4f3;
+}
+
+#description span {
+  color: #dd1c1a;
 }
 
 .nav_bar table{
@@ -51,9 +80,8 @@ a:hover {
 header h1 {
   color: #086788;
   font-size: 100px;
-
   padding-top: 10px;
-  margin: 0 auto;
+  text-align: center;
 
 }
 
@@ -62,12 +90,19 @@ header span {
 }
 
 footer p {
-  color: #086788;
+  color: #f2f4f3;
+  padding-top: 10px;
 
 }
 
 figure #cap {
   background-color: #f0c808;
+  color: #086788;
+  padding: 10px;
+  font-weight: bolder;
+  opacity: 65%;
   position:absolute;
-  right: 400px;
+  right: 370px;
+  bottom: 622px
+
 }
