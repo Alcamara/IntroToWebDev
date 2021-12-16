@@ -1,0 +1,73 @@
+body {
+  background-color: #f2f4f3;
+}
+
+header {
+  background-color: #f0c808;
+}
+
+nav {
+  background-color: #086788;
+  height: 60px;
+
+}
+
+footer {
+  background-color: #f0c808;
+  color: #086788;
+}
+
+
+
+figure img[src*='Grace.jpg'] {
+  width: 40%;
+  height: auto;
+
+}
+
+a {
+   text-decoration: none;
+   color: #086788;
+}
+
+a:hover {
+   color: #f2f4f3;
+}
+
+.nav_bar table{
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+}
+
+.nav_bar th {
+  background-color: #f0c808;
+  padding: 5px;
+  margin: 100px;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+header h1 {
+  color: #086788;
+  font-size: 100px;
+
+  padding-top: 10px;
+  margin: 0 auto;
+
+}
+
+header span {
+      font-family: 'Cedarville Cursive', cursive;
+}
+
+footer p {
+  color: #086788;
+
+}
+
+figure #cap {
+  background-color: #f0c808;
+  position:absolute;
+  right: 400px;
+}
