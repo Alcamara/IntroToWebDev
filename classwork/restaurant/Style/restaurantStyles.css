@@ -1,11 +1,16 @@
-body {
-  background-color: #f2f4f3;
-
-}
+/* style for header body, and nav*/
 
 header {
   background-color: #f0c808;
   padding-top: 30px;
+}
+
+header h1 {
+  color: #086788;
+  font-size: 100px;
+  padding-top: 10px;
+  text-align: center;
+
 }
 
 nav {
@@ -16,14 +21,94 @@ nav {
 
 }
 
-figure {
+.nav_bar ul{
+  display: table;
   margin: 0 auto;
+}
+
+
+
+.nav_bar li {
+  background-color: #f0c808;
+  padding: 7px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  list-style: none;
+
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+body {
+  background-color: #f2f4f3;
+
 }
 
 footer {
   background-color:  #086788;
 
 }
+
+/* menu css*/
+
+#des{
+
+}
+
+#menu {
+  width: 100%;
+  margin: 0 auto;
+  border-style: dashed;
+  padding: 30px;
+
+}
+
+#right-menu {
+
+  display: inline-grid;
+
+
+}
+
+#middle-menu {
+  display: inline-grid;
+
+}
+
+#left-menu{
+  display: inline-grid;
+}
+
+.meal  {
+    background-color: #f0c808;
+    border:  dashed #086788 ;
+    margin: 5px;
+    height: 250px;
+    width: 550px;
+
+}
+
+
+
+table {
+  float: left;
+}
+
+/*.jambalaya {
+  background-image: url('https://cafedelites.com/wp-content/uploads/2018/05/Jambalaya-IMAGE-3.jpg');
+}
+*/
+
+
+
+
+figure {
+  margin: 0 auto;
+}
+
+
 
 
 article #slogan {
@@ -68,33 +153,9 @@ a:hover {
 }
 
 
-.nav_bar ul{
-  display: table;
-  margin: 0 auto;
-}
 
 
 
-.nav_bar li {
-  background-color: #f0c808;
-  padding: 7px;
-  margin-top: 10px;
-  margin-left: 50px;
-  margin-right: 50px;
-  list-style: none;
-
-  display: inline-block;
-  border-radius: 10px;
-  font-size: 25px;
-}
-
-header h1 {
-  color: #086788;
-  font-size: 100px;
-  padding-top: 10px;
-  text-align: center;
-
-}
 
 header span {
       font-family: 'Cedarville Cursive', cursive;
