@@ -57,12 +57,20 @@ footer {
 
 }
 
+img {
+  height: auto;
+  width: 170px;
+}
+
 #menu {
-  width: 100%;
-  margin: 0 auto;
   border-style: dashed;
   padding: 30px;
+  text-align: center;
+}
 
+#menu p{
+  font-family: sans-serif;
+  text-align: center;
 }
 
 #right-menu {
