@@ -16,10 +16,38 @@ h1 {
   font-size: 2.5em;
 }
 
+/*formating nav*/
+
 nav {
   border-top: 3px dashed #546a7b;
   border-bottom: 3px dashed #546a7b;
   margin-top: 4px;
+}
+
+nav a {
+  background-color: #546a7b;
+    color: #fef9ff;
+    padding: 8px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px 20px;
+    width: 100px;
+    float:left;
+}
+
+nav a:hover{
+  background-color: #fef9ff;
+  color: #5b7d87;
+}
+
+nav a:active{
+  font-weight: bold;
+}
+
+nav a:active{
+  color: #e4c3ad;
 }
 
 /*table formating*/
@@ -98,4 +126,26 @@ textarea {
     border-radius: 3px;
     background-color: #fff;
     resize: none;
+}
+
+.clear-float{
+  clear: both;
+}
+
+
+p {
+  margin-left: 100px;
+}
+
+
+section img{
+ float: left;
+ margin-right:  4px
+}
+
+
+
+.right-content{
+  float:left;
+  height: 200px;
 }
