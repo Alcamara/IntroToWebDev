@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<!--
+  name: Alhousseine Camara
+  Date Created: 11/17/2021
+  Most recent revision: 11/17/2021
+-->
+  <header>
+      <title>Alhousseine Camara</title>
+      <link rel="stylesheet" href="E:\git\IntroToWebDev\classwork\portfolio\portifolio.css">
+      <h1>Contact Me</h1>
+  </header>
+  <hr>
+  <nav>
+    <p><a href="E:\git\IntroToWebDev\classwork\portfolio\index.html">Projects</a></p>
+    <p><a href="E:\git\IntroToWebDev\classwork\portfolio\contact.html">Contact</a></p>
+    <p><a href="E:\git\IntroToWebDev\classwork\portfolio\testimonials.html">Testimonials</a></p>
+  </nav>
+  <hr>
+  <body>
+    <section id="contact_info">
+      <form class="" action="submit.html" method="post">
+        <label for="f_name">First Name: </label>
+        <input type="text" name="f_name" value="">
+        <br>
+
+        <label for="l_name">Last Name: </label>
+        <input type="text" name="l_name" value="">
+        <br>
+
+        <label for="phone_number">Phone Number: </label>
+        <input type="tel" name="phone_number" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <br>
+
+        <label for="best-time2-call">Best Time to call:</label>
+        <select class="" name="best-time2-call">
+          <option value="Morning">Morning(8AM - 12PM Central)</option>
+          <option value="Afternoon">Afternoon(12PM - 5PM Central)</</option>
+          <option value="Evening">Evening(5PM - 8PM Central)</</option>
+        </select>
+        <br>
+
+        <fieldset>
+          <legend>I am interested in (check al that apply):</legend>
+
+          <input type="checkbox" name="front-end" value="">
+          <label for="front-end">Front-End Web Devlopment</label><br>
+
+          <input type="checkbox" name="back-end" value="">
+          <label for="back-end">Back-End Web Devlopment</label><br>
+
+          <input type="checkbox" name="database-design" value="">
+          <label for="database-design">Database Design</label><br>
+        </fieldset>
+        <fieldset>
+          <legend>I have filled in the client questinnaire form:</legend>
+
+          <input type="radio" name="yes" value="yes">
+          <label for="yes">Yes</label><br>
+
+          <input type="radio" name="no" value="yes">
+          <label for="no">No</label><br>
+        </fieldset>
+
+
+
+        <label for="add_info">Additional information: </label><br>
+        <textarea name="add_info" rows="8" cols="40"></textarea>
+
+      </form>
+
+    </section>
+
+      <!--Need to add links to project.html, contact.html, and testimonials.html-->
+      <footer>
+          <hr>
+          <p>&copy; 2021 Alhousseine  Camara. All rights reserved</p>
+      </footer>
+  </body>
+
+</html>
