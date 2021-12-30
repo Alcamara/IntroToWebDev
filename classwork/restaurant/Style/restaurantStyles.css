@@ -50,19 +50,28 @@ body h2 {
 /*font styling*/
 #description p {
   font-family: 'Source Serif 4', Georgia, serif;
+
+}
+
+.col p {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 20px;
+  color: #086788;
+  text-align: center;
+}
+
+.col h3 {
   font-size: 30px;
 }
 
-#right-menu, #middle-menu, #left-menu {
-  font-family: 'Source Serif 4', Georgia, serif;
-  font-size: 20px;
-  color: #086788
+header span, body span, .col h3 {
+  font-family: 'Pushster', cursive;
+  color: #086788;
+  text-align: center;
+
+
 }
 
-header span, body span, article h3, {
-  font-family: 'Pushster', cursive;
-  color: #086788
-}
 
 /*nav button*/
 nav .btn {
@@ -91,8 +100,12 @@ nav a:hover {
 /* menu css*/
 img {
   display: inline;
+  position: relative;
+  left: 100px;
   height: auto;
-  width: 180px;
+  width: 40%;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 
@@ -106,9 +119,6 @@ img {
 
 }
 
-.clear-both {
-  clear: both;
-}
 
 table {
   float: left;
@@ -141,8 +151,6 @@ figure img[src*='Grace.jpg'] {
   border-top-right-radius: 40px;
   margin-top: 10px;
 }
-
-
 
 #description span {
   color: #f0c808;
