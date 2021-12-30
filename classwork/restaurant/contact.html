@@ -1,97 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <header>
-      <title>Contact Us</title>
-      <h1><span> Grace's</span> Soul Food</h1>
-      <link rel="stylesheet" href=".\Style\restaurantStyles.css">
-      <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
-  </header>
-  <nav class="nav_bar">
-    <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./menu.html">Menu</a></li>
-        <li><a href="./contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-  <main>
-    <body>
-      <section class="overlay">
-        <form  action="/index.html" method="post">
-          <section class="contact_name">
-              <label for="name">Name:</label>
-                <input type="text" name="name" id="name" minlengh="3" maxlength="16" required>
-          </section>
-          <br>
-          <br>
-          <section class="contact_email">
-              <label for="email">Email:</label>
-                <input type="text" name="email" id="email" required>
-          </section>
-          <br>
-          <br>
-          <section class="contact_number">
-              <label for="phone">Phone Number:</label>
-                <input type="text" name="phone" id="phone" required  pattern="[0-9]{10}">
-          </section>
-          <br>
-          <br>
-          <section class="contact_reason">
-            <label for="reason">Reason for Inquiry:</label>
-              <select id="reason" name="reason">
-                <option value="catering">Catering</option>
-                <option value="party">Private Party</option>
-                <option value="feedback">Feedback</option>
-                <option value="other">Other</option>
-              </select>
-          </section>
-          <br>
-          <section class="contact_add_Info">
-              <label for="info">Additional Information:</label>
-                <textarea name="info" id="info" rows="10" cols="40"></textarea>
-          </section>
-          <br>
-          <br>
-          <section class="contact_have_u_been">
-              <label for="restaurant">Have you been to the restaurant?</label>
+<meta charset="utf-8">
+<header>
+    <title>Contact</title>
+    <h1><span> Grace's</span> Soul Food</h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=".\Style\restaurantStyles.css">
+</header>
+<!--Nav bar-->
+<nav class="nav_bar">
+  <a href="./index.html">Home</a>
+  <a href="./menu.html">Menu</a>
+  <a href="./contact.html">Contact Us</a>
+</nav>
+<main>
 
-                <input type="radio" id="yes" name="yes" value="yes">
-                  <label for="yes">Yes</label>
+  <body>
+    <section class="overlay">
+      <form action="/index.html" method="post">
+        <section class="contact_name">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" minlengh="3" maxlength="16" required>
+        </section>
+        <br>
+        <br>
+        <section class="contact_email">
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" required>
+        </section>
+        <br>
+        <br>
+        <section class="contact_number">
+          <label for="phone">Phone Number:</label>
+          <input type="text" name="phone" id="phone" required pattern="[0-9]{10}">
+        </section>
+        <br>
+        <br>
+        <section class="contact_reason">
+          <label for="reason">Reason for Inquiry:</label>
+          <select id="reason" name="reason">
+            <option value="catering">Catering</option>
+            <option value="party">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select>
+        </section>
+        <br>
+        <section class="contact_add_Info">
+          <label for="info">Additional Information:</label><br>
+          <textarea name="info" id="info" rows="10" cols="40"></textarea>
+        </section>
+        <br>
+        <br>
+        <section class="contact_have_u_been">
+          <label for="restaurant">Have you been to the restaurant?</label>
 
-                <input type="radio" id="no" name="no" value="no">
-                  <label for="no">No</label>
-          </section>
-           <br>
-           <br>
-          <section class="contact_best_day">
-            <label for="best_days">Best days to contact you:</label>
-              <input type="checkbox"  id="m" name="contact_best_day" value="m">
-                <label for="m">M</label>
+          <input type="radio" id="yes" name="yes" value="yes">
+          <label for="yes">Yes</label>
 
-              <input type="checkbox" id="t" name="contact_best_day" value="t">
-                <label for="t">T</label>
+          <input type="radio" id="no" name="no" value="no">
+          <label for="no">No</label>
+        </section>
+        <br>
+        <br>
+        <section class="contact_best_day">
+          <label for="best_days">Best days to contact you:</label>
+          <input type="checkbox" id="m" name="contact_best_day" value="m">
+          <label for="m">M</label>
 
-              <input type="checkbox" id="w" name="contact_best_day" value="w">
-                <label for="w">W</label>
+          <input type="checkbox" id="t" name="contact_best_day" value="t">
+          <label for="t">T</label>
 
-              <input type="checkbox" id="th" name="contact_best_day" value="th">
-                <label for="th">Th</label>
+          <input type="checkbox" id="w" name="contact_best_day" value="w">
+          <label for="w">W</label>
 
-              <input type="checkbox" id="f" name="contact_best_day" value="f">
-                <label for="f">F</label>
-          </section>
-            <br>
-          <section class="send_request">
-            <input type="submit" value="Send Request">
-          </section>
-        </form>
-      </section>
-    </body>
+          <input type="checkbox" id="th" name="contact_best_day" value="th">
+          <label for="th">Th</label>
 
-  </main>
-  <hr>
-  <footer align="center">
-    <p> 55 Main Street, New York, New York</p>
-    <p>(212) 838-9699</p>
-  </footer>
+          <input type="checkbox" id="f" name="contact_best_day" value="f">
+          <label for="f">F</label>
+        </section>
+        <br>
+        <section class="send_request">
+          <input type="submit" value="Send Request">
+        </section>
+      </form>
+    </section>
+  </body>
+
+</main>
+
+<footer>
+  <p> 55 Main Street, New York, New York (212) 838-9699</p>
+  <p>&copy; 2021 Alhousseine Camara. All rights reserved</p>
+</footer>
 
 </html>

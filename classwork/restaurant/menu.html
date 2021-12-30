@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  <meta charset="utf-8">
   <header>
       <title>Menu</title>
       <h1><span> Grace's</span> Soul Food</h1>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
       <link rel="stylesheet" href=".\Style\restaurantStyles.css">
-      <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
   </header>
   <nav class="nav_bar">
-    <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./menu.html">Menu</a></li>
-        <li><a href="./contact.html">Contact Us</a></li>
-    </ul>
+    <a href="./index.html">Home</a>
+    <a href="./menu.html">Menu</a>
+    <a href="./contact.html">Contact Us</a>
   </nav>
   <main>
     <body>
@@ -34,86 +35,82 @@
           </tr>
         </tbody>
       </table>
+      <div class="clear-both">
 
-         <article id="des">
+      </div>
+        <section class="menu">
           <p>All dinner meals come with Flaky Buttermilk Biscuits and your
             choose of 2 sides.</p>
           <p>Collard Greens, Red Beans & Rice, Brussel Sprouts, Mashed Potatoes
             & Bravy, Side Salad</p>
-        </article>->
-      <section id="menu">
-        <section id="right-menu">
-          <article class="meal jambalaya">
-              <h3>Jambalaya </h3>
+          <section id="right-menu">
+            <article class="meal jambalaya">
+                <h3>Jambalaya </h3>
 
-              <img src="./pictures/jamb.png" alt="jambalaya">
+                <img src="./pictures/jamb.png" alt="jambalaya">
 
-              <p>Chicken, Andouille, Jalapeno Pork Sausage, Pork Shoulder
-            , Shrimp, Trinity & Rice -$19</p>
+                <p>Chicken, Andouille, Jalapeno Pork Sausage, Pork Shoulder
+              , Shrimp, Trinity & Rice -$19</p>
+              </article>
+
+              <article class="meal shrimp">
+
+                  <h3>Shrimp, Pork n’ Grits– Gulf Shrimp,</h3>
+
+                  <img src="./pictures/grits.png" alt="grits">
+
+                  <p>Andouille Pork Sausage, Trinity,Stone Ground Cheddar Grits,
+                    Louisiana Hot Butter Sauce  – $19</p>
+
+            </article>
+          </section>
+          <section id="middle-menu">
+            <article class="meal catfish">
+
+                <h3>Blackened or Deep Fried Catfish Filet</h3>
+
+                <img src="./pictures/catfish.png" alt="catfish">
+
+                <p>Served with Red Beans,
+            Andouille Pork & Rice, and Jalapeno Tartar Sauce -$18</p>
+
             </article>
 
-            <article class="meal shrimp">
+            <article class="meal ribs">
+                <h3>St. Louis Ribs- Hickory Smoked</h3>
 
-                <h3>Shrimp, Pork n’ Grits– Gulf Shrimp,</h3>
+                <img src="./pictures/ribs.jpg" alt="ribs">
 
-                <img src="./pictures/grits.png" alt="grits">
+                <p>Braised & Char-Broiled Ribs Served
+            with Brussel Sprouts– $18/$27</p>
 
-                <p>Andouille Pork Sausage, Trinity,Stone Ground Cheddar Grits,
-                  Louisiana Hot Butter Sauce  – $19</p>
-
-          </article>
-        </section>
-        <section id="middle-menu">
-          <article class="meal catfish">
-
-              <h3>Blackened or Deep Fried Catfish Filet</h3>
-
-              <img src="./pictures/catfish.png" alt="catfish">
-
-              <p>Served with Red Beans,
-          Andouille Pork & Rice, and Jalapeno Tartar Sauce -$18</p>
-
-          </article>
-
-          <article class="meal ribs">
-              <h3>St. Louis Ribs- Hickory Smoked</h3>
-
-              <img src="./pictures/ribs.jpg" alt="ribs">
-
-              <p>Braised & Char-Broiled Ribs Served
-          with Brussel Sprouts– $18/$27</p>
-
-          </article>
-
-        </section>
-        <section id="left-menu">
-          <article class="meal pork_chop">
-              <h3>Smoked Double Cut Pork Chop</h3>
-              <img src="./pictures/pork.png" alt="pork_chop">
-              <p>Full Pound, Bone-In, Brined, Smoked
-              & Char–Broiled, with House-Made Bourbon Mustard BBQ Sauce,
-              and Mashed Potatoes & Brown Gravy– $22</p>
-          </article>
-
-          <article class="meal fried_chicken">
-              <h3>Fried Chicken</h3>
-
-              <img src="./pictures/chicken.png" alt="chicken">
-
-              <p>Our Brined & Marinated 1/2 Chicken Served with
-            Collard Greens – $19</p>
             </article>
-          </article>
+          </section>
+          <section id="left-menu">
+            <article class="meal pork_chop">
+                <h3>Smoked Double Cut Pork Chop</h3>
+                <img src="./pictures/pork.png" alt="pork_chop">
+                <p>Full Pound, Bone-In, Brined, Smoked
+                & Char–Broiled, with House-Made Bourbon Mustard BBQ Sauce,
+                and Mashed Potatoes & Brown Gravy– $22</p>
+            </article>
 
+            <article class="meal fried_chicken">
+                <h3>Fried Chicken</h3>
+
+                <img src="./pictures/chicken.png" alt="chicken">
+
+                <p>Our Brined & Marinated 1/2 Chicken Served with
+              Collard Greens – $19</p>
+              </article>
+            </article>
         </section>
-      </section>
+
     </body>
-
   </main>
-  <hr>
   <footer >
-    <p> 55 Main Street, New York, New York</p>
-    <p>(212) 838-9699</p>
+    <p> 55 Main Street, New York, New York (212) 838-9699</p>
+    <p>&copy; 2021 Alhousseine Camara. All rights reserved</p>
   </footer>
 
 </html>
