@@ -4,7 +4,7 @@
 
 // 1. ADD TWO NUMBERS
 // ==================
-// Complete the following function. 
+// Complete the following function.
 // Write code to add firstNumber and secondNumber and then return the result.
 
 function addTwoNumbers(firstNumber, secondNumber) {
@@ -23,7 +23,7 @@ console.log("112 + 0 -> expected: 112, actual: %s", result);
 result = addTwoNumbers(-53, 40);
 console.log("-53 + 40 -> expected: -13, actual: %s", result);
 
-// 2. FIRST LETTER IN A PHRASE 
+// 2. FIRST LETTER IN A PHRASE
 //   (first character in a string)
 // =============================
 // Complete the following function.
