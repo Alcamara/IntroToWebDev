@@ -11,8 +11,8 @@
 <body>
   <div class="container">
     <h1>CODE-ALONG: Display Evens</h1><br>
-    <form name="evenNum" class="needs-validation" onsubmit="return
-        validate();" onreset="resetView();" novalidate>
+    <form name="evenNum" class="needs-validation" onsubmit="return validate();"
+    onreset="resetView();" novalidate>
       <div class="form-row">
         <!--first Row-->
         <div class="form-group form-inline">
@@ -55,8 +55,19 @@
       </div>
       <!--4th row end-->
     </form>
+    <table id="results" class="table table-striped" style="display:none">
+      <thead>
+        <tr>
+          <th><span id="message"></span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span id="element"></span></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-
   <script type="text/javascript" src="displayEven.js"></script>
 </body>
 
