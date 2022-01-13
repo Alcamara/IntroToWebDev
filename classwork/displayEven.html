@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CODE-ALONG: Display Evens</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <h1>CODE-ALONG: Display Evens</h1><br>
+    <form name="evenNum" class="needs-validation" onsubmit="return
+        validate();" onreset="resetView();" novalidate>
+      <div class="form-row">
+        <!--first Row-->
+        <div class="form-group form-inline">
+          <label for="startingNum">Starting Number</label>
+          <input type="text" id="startingNum" class="form-control mx-sm-3" required>
+          <div class="invalid-feedback">
+            Starting number is required and must be a number!
+          </div>
+        </div>
+      </div>
+      <!--End of first row-->
+      <div class="form-row ">
+        <!--2nd Row-->
+        <div class="form-group form-inline">
+          <label for="endingNum">Ending Number</label>
+          <input type="text" id="endingNum" class="form-control mx-sm-3" required>
+          <div class="invalid-feedback">
+            Ending number is required and must be a number!
+          </div>
+        </div>
+      </div>
+      <!--end of 2nd Row-->
+      <div class="form-row">
+        <!--3rd Row-->
+        <div class="form-group form-inline">
+          <label for="step">Step</label>
+          <input type="text" id="step" class="form-control mx-sm-3" required>
+          <div class="invalid-feedback">
+            Step is required and must be a number!
+          </div>
+        </div>
+      </div>
+      <!--3rd row end-->
+      <div class="form-row">
+        <!--4th row-->
+        <div class="form-group">
+          <button type="submit" id="submitButton" class="btn btn-primary">Display Evens</button>
+          <button type="reset" class="btn btn-secondary">reset</button>
+        </div>
+      </div>
+      <!--4th row end-->
+    </form>
+  </div>
+
+  <script type="text/javascript" src="displayEven.js"></script>
+</body>
+
+</html>
