@@ -16,11 +16,17 @@ function validate() {
     return false;
   }
 
+
   let start = parseInt(startingNum.value, 10);
   let end = parseInt(endingNum.value, 10);
   let step = parseInt(stepNum.value, 10);
   let evenArray = [];
   let evenElements = "";
+
+  if(end <= start){
+  alert("Ending number must be greater starting number!");
+  return false;
+  }
 
 
   document.getElementById("message").innerText = `Here are the even numbers between ${start} and ${end} by ${step}'s:`;
@@ -36,7 +42,6 @@ function validate() {
   for (var i = 0; i < evenArray.length; i++) {
     evenElements += evenArray[i] +"\n";
   }
-
 
 
 document.getElementById("element").innerText = evenElements ;

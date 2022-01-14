@@ -17,7 +17,7 @@
         <!--first Row-->
         <div class="form-group form-inline">
           <label for="startingNum">Starting Number</label>
-          <input type="text" id="startingNum" class="form-control mx-sm-3" required>
+          <input type="number" id="startingNum" class="form-control mx-sm-3" required>
           <div class="invalid-feedback">
             Starting number is required and must be a number!
           </div>
@@ -28,7 +28,7 @@
         <!--2nd Row-->
         <div class="form-group form-inline">
           <label for="endingNum">Ending Number</label>
-          <input type="text" id="endingNum" class="form-control mx-sm-3" required>
+          <input type="number" id="endingNum" class="form-control mx-sm-3" required>
           <div class="invalid-feedback">
             Ending number is required and must be a number!
           </div>
@@ -39,9 +39,9 @@
         <!--3rd Row-->
         <div class="form-group form-inline">
           <label for="step">Step</label>
-          <input type="text" id="step" class="form-control mx-sm-3" required>
+          <input type="number" id="step" class="form-control mx-sm-3" min="0" required>
           <div class="invalid-feedback">
-            Step is required and must be a number!
+            Step must be a positive number!
           </div>
         </div>
       </div>
