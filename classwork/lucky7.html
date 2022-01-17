@@ -12,7 +12,9 @@
   <div class="contianer">
     <!--title row-->
     <h1>Lucky Sevens</h1><br>
+    <!--Begin of form-->
     <form  name="luckySeven" class="needs-validation" onsubmit=""  onreset="" novalidate>
+      <!--input bet row-->
         <div class="form-row">
           <div class="form-group form-inline">
             <label for="placeBet">Starting Bet:</label>
@@ -22,16 +24,38 @@
             </div>
           </div>
         </div>
+        <!--button row-->
         <div class="form-row">
           <div class="form-group">
             <button type="submit" id="placeBet" class="btn btn-outline-primary">Play</button>
           </div>
-
         </div>
     </form>
-
-
-
+    <table id="results" class="table table-striped" style="display:none">
+      <thead>
+        <tr>
+          <th>Results</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Starting Bet</td>
+          <td><span id="startingBet"></span></td>
+        </tr>
+        <tr>
+          <td>Total Rolls before Going Broke</td>
+          <td><span id="beforeBroke"></span></td>
+        </tr>
+        <tr>
+          <td>Highest Amount Won</td>
+          <td><span id="highestAmountWon"></span></td>
+        </tr>
+        <tr>
+          <td>Roll Count at Highest Amount Won</td>
+          <td><span id="rollCountAtHAW"></span></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
   <script src="text/javascript" src="lucky7.js"></script>
