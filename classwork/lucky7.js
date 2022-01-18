@@ -63,14 +63,15 @@ function validate() {
 
   runGame();
 
-  document.getElementById("startingBet").innerText = startingBet;
+  document.getElementById("startingBet").innerText = `$${startingBet}.00`;
   document.getElementById("totalNumRolls").innerText = totalNumRolls;
-  document.getElementById("highestAmountWon").innerText = highestAmountWon;
+  document.getElementById("highestAmountWon").innerText = `$${highestAmountWon}.00`;
   document.getElementById("rollCountAtHAW").innerText = rollCountAtHAW;
 
 
 
   results.style.display = "block";
+  play.innerText = "Play Again";
 
 
   return false;
