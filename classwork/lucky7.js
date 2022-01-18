@@ -11,12 +11,57 @@ function validate() {
   }
 
   let startingBet = parseInt(starting.value, 10);
-  let numRolls = 0;
+  let amountWon = 0;
   let highestAmountWon = 0;
   let rollCountAtHAW = 0;
   let totalNumRolls = 0;
   let currentBalance = startingBet;
-  let currentRoll = 0;
+
+  // function that generate a roll
+  function rollDice() {
+
+       return Math.floor(Math.random() * 7);
+
+  }
+
+  //function returns sum of 2 roll;
+  function sumOfTwoRoll() {
+    let rollOne = rollDice();
+    let rollTwo = rollDice();
+
+    return rollOne + rollTwo;
+  }
+
+
+  //checks to see of player won
+  function checkIfWon(sum) {
+
+    if (sum === 7) {
+       currentBalance += 4;
+       amountWon +=4;
+    } else {
+      currentBalance -= 1;
+    }
+
+    if (amountWon > highestAmountWon) {
+      highestAmountWon = amountWon;
+      rollCountAtHAW = totalNumRolls;
+    }
+  }
+
+
+  function runGame() {
+
+    let sum;
+    do {
+      totalNumRolls++
+      sum = sumOfTwoRoll();
+      checkIfWon(sum);
+
+    } while (currentBalance != 0);
+  }
+
+  runGame();
 
   document.getElementById("startingBet").innerText = startingBet;
   document.getElementById("totalNumRolls").innerText = totalNumRolls;
@@ -30,37 +75,6 @@ function validate() {
 
   return false;
 }
-
-// six side dice roll
-function rollDice() {
-
-     return Math.floor(Math.random() * 7);
-
-}
-
-//function roll dice and return sum;
-function sumOfTwoRoll() {
-  let rollOne = rollDice();
-  let rollTwo = rollDice();
-
-  return rollOne + rollTwo;
-}
-
-//
-function checkIfWon(sum) {
-
-  if (sum === 7) {
-     currentTotal += 4;
-  } else {
-    currentTotal -= 1;
-  }
-
-  if (currentTotal > highestAmountWon) {
-    highestAmountWon = currentTotal;
-    totalNumRolls = currentRoll;
-  }
-}
-
 
 
 
