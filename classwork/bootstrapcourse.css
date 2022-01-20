@@ -1,0 +1,17 @@
+.col, .col-lg-1, .col-md-4, [class*="col"] {
+  padding: 1rem;
+  background-color: blue;
+  border: solid white;
+
+  color: white;
+}
+
+.child {
+  background-color:  rgb(40, 74, 34);
+}
+
+#card {
+
+  border: 1 solid black;
+
+}

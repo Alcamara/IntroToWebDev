@@ -1,0 +1,16 @@
+#one {
+  background-color: black;
+  color: rgb(177, 104, 28);
+  border: 1px solid white;
+}
+
+#two {
+  background-color: rgb(20, 6, 66);
+  color: rgb(249, 65, 56);
+  border: 1px solid white;
+}
+
+#three {
+  background-color: rgb(18, 119, 170);
+  color: white;
+}
