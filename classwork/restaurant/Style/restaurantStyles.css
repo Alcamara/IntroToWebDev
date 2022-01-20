@@ -11,7 +11,7 @@
 
 nav, footer {
   background-color: #086788;
-  height: 70px;
+  text-align: center;
 }
 
 body {
@@ -22,6 +22,11 @@ body {
 /*Styling text in header*/
 .navbar-brand {
   background-color: #f0c808;
+  color: #086788;
+}
+
+.navbar-brand span, h2 span {
+  font-family: 'Pushster', cursive;
   color: #086788;
 }
 
@@ -43,6 +48,24 @@ body h2 {
 
 }
 
+.col-6 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 40px;
+  background-color: #086788;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+
+}
+
+.col-6 span {
+  color: #f0c808;
+  font-family: 'Pushster', cursive;
+
+}
+
+
 .col p {
   font-family: 'Source Serif 4', Georgia, serif;
   font-size: 20px;
@@ -54,10 +77,11 @@ body h2 {
   font-size: 30px;
 }
 
- body span, .col h3 {
+  .col h3, .container h1 {
   font-family: 'Pushster', cursive;
   color: #086788;
   text-align: center;
+  padding-top: 10px;
 
 
 }
@@ -81,15 +105,7 @@ nav a:hover {
 
 
 /* menu css*/
-img {
-  display: inline;
-  position: relative;
-  left: 100px;
-  height: auto;
-  width: 40%;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
+
 
 
 
@@ -103,37 +119,18 @@ img {
 }
 
 
-table {
-  float: left;
-}
 
-article #slogan {
+
+.col-6 #slogan {
   text-align: center;
   color: #f0c808;
   font-family: 'Pushster', cursive;
   font-weight: bolder;
 }
 
-figure img[src*='Grace.jpg'] {
-  width: 40%;
-  height: auto;
-  display: inline;
-  position: relative;
-  left: 30%;
-}
 
-#description {
-  background-color: #086788;
-  font-size: 20px;
-  width: 40%;
-  height: auto;
-  padding: 10px;
-  margin: 0 auto;
-  border-style: solid;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  margin-top: 10px;
-}
+
+
 
 #description span {
   color: #f0c808;
@@ -144,10 +141,8 @@ footer p {
   line-height: 1.5;
 }
 
-.overlay {
+.container {
   background-color: #f0c808;
-  width: 50%;
-  padding: 20px;
   border-radius: 5px;
   margin-top: 100px;
   margin: 0 auto;
@@ -155,8 +150,9 @@ footer p {
 
 label{
   font-weight: bolder;
-  
+
 }
+
 
 
 #info {
