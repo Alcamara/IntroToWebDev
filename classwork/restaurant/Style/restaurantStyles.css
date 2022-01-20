@@ -16,6 +16,7 @@ nav, footer {
 
 body {
   background-color: #f2f4f3;
+
 }
 
 /*Styling text in header*/
@@ -154,11 +155,9 @@ footer p {
 
 label{
   font-weight: bolder;
+  
 }
 
-form.overlay {
-  text-align: center;
-}
 
 #info {
   resize: both;

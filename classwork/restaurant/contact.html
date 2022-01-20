@@ -12,9 +12,10 @@
     <link rel="stylesheet" href=".\Style\restaurantStyles.css">
 </head>
 <header>
-  <!--site Logo-->
+  <!--Nav bar-->
   <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container-fluid">
+      <!--site Logo-->
       <a class="navbar-brand p-2" href="#"><span>Grace's</span> Soul Food</a>
     </div>
     <form class="container-fluid justify-content-end m-2">
@@ -28,78 +29,114 @@
       <a class="btn" href="./contact.html">Contact Us</a>
     </form>
   </nav>
-<!--Nav bar-->
 <main>
   <body>
-    <section class="overlay">
-      <form action="/index.html" method="post">
-        <section class="contact_name">
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name" width="100%" minlengh="3" maxlength="16" required>
-        </section>
-        <br>
-        <br>
-        <section class="contact_email">
-          <label for="email">Email:</label>
-          <input type="text" name="email" id="email" required>
-        </section>
-        <br>
-        <br>
-        <section class="contact_number">
-          <label for="phone">Phone Number:</label>
-          <input type="text" name="phone" id="phone" required pattern="[0-9]{10}">
-        </section>
-        <br>
-        <br>
-        <section class="contact_reason">
-          <label for="reason">Reason for Inquiry:</label>
-          <select id="reason" name="reason">
-            <option value="catering">Catering</option>
-            <option value="party">Private Party</option>
-            <option value="feedback">Feedback</option>
-            <option value="other">Other</option>
-          </select>
-        </section>
-        <br>
-        <section class="contact_add_Info">
-          <label for="info">Additional Information:</label><br>
-          <textarea name="info" id="info" rows="10" cols="40"></textarea>
-        </section>
-        <br>
-        <br>
-        <section class="contact_have_u_been">
-          <label for="restaurant">Have you been to the restaurant?</label>
+    <section class="overlay my-2">
+      <h1 style="text-align: Center ">Contact Us</h1>
+      <!--beginning of container-->
+      <div class="container-fluid">
+        <!--beinning of form-->
+        <form class="needs-validation" action="/index.html" method="post">
+          <!--Name-->
+          <div class="mb-3 row mx-2">
+              <label  class="col-sm-2"for="name">Name:</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" name="name" id="name" width="100%" minlengh="3" maxlength="20" placeholder="John Doe" required>
+              </div>
+          </div>
+          <!--Email-->
+          <div class="mb-3 row mx-2 ">
+              <label class="col-sm-2" for="email">Email:</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" name="email" id="email" width="100%" minlengh="3" maxlength="16" placeholder="email@gmail.com" required>
+              </div>
+          </div>
+          <!--Phone Number-->
+          <div class="mb-3 row mx-2">
+              <label class="col-sm-2" for="phone">Phone Number:</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" placeholder="555-555-5555"  required>
+                <div class="invalid-feedback">
+                  Please enter a valid number.
+                </div>
+              </div>
+          </div>
+          <!--DropDown-->
+          <div class="mb-3 row mx-2">
+              <label class="col-sm-2" for="reason">Reason for Inquiry:</label>
+              <div class="col-sm-10">
+                <select class="form-control" id="reason" name="reason">
+                  <option value="catering">Catering</option>
+                  <option value="party">Private Party</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+          </div>
+          <!--text Area-->
+          <div class="mb-3 row mx-2">
+              <label class="col-sm-2" for="info">Additional Information:</label>
+              <div class="col-sm-10">
+              <textarea class="form-control" name="info" id="info" rows="10" cols="40"></textarea>
+              </div>
+          </div>
+          <!--Radio-->
+          <div class="mb-3 row mx-2">
+              <label class="col-sm-2" for="restaurant">Have you been to the restaurant?</label>
+              <div class="col-sm-10">
+                <input type="radio" id="yes" name="yes" value="yes">
+                <label  for="yes">Yes</label>
 
-          <input type="radio" id="yes" name="yes" value="yes">
-          <label for="yes">Yes</label>
+                <input type="radio" id="no" name="no" value="no">
+                <label for="no">No</label>
+              </div>
+          </div>
+          <!--checkbox-->
+          <div class="mb-3 row mx-2">
+              <label class="col-sm-2" for="best_days">Best days to contact you:</label>
+              <div class="col-sm-10">
+                  <div class="row">
+                    <div class="col-1">
+                      <input type="checkbox" id="mon" name="contact_best_day" value="mon">
+                      <label class="col-sm-1" for="mon">Mon</label>
+                    </div>
+                    <div class="col-1">
+                      <input  type="checkbox" id="tues" name="contact_best_day" value="tues">
+                      <label class="col-sm-1" for="tes">Tues</label>
+                    </div>
+                    <div class="col-1">
+                      <input type="checkbox" id="wed" name="contact_best_day" value="wed">
+                      <label class="col-sm-1" for="wed">Wed</label>
+                    </div>
+                    <div class="col-1">
+                      <input type="checkbox" id="thur" name="contact_best_day" value="thur">
+                      <label class="col-sm-1" for="thur">Thur</label>
+                    </div>
+                    <div class="col-1">
+                      <input type="checkbox" id="fri" name="contact_best_day" value="fri">
+                      <label class="col-sm-1" for="fri">Fri</label>
+                    </div>
+                    <div class="col-1">
+                      <input type="checkbox" id="sat" name="contact_best_day" value=sat>
+                      <label class="col-sm-1" for="sat">Sat</label>
+                    </div>
+                    <div class="col-1">
+                      <input type="checkbox" id="sat" name="contact_best_day" value=sat>
+                      <label class="col-sm-1" for="sat">Sat</label>
+                    </div>
+                  </div>
 
-          <input type="radio" id="no" name="no" value="no">
-          <label for="no">No</label>
-        </section>
-        <br>
-        <br>
-        <section class="contact_best_day">
-          <label for="best_days">Best days to contact you:</label>
-          <input type="checkbox" id="m" name="contact_best_day" value="m">
-          <label for="m">M</label>
 
-          <input type="checkbox" id="t" name="contact_best_day" value="t">
-          <label for="t">T</label>
 
-          <input type="checkbox" id="w" name="contact_best_day" value="w">
-          <label for="w">W</label>
-
-          <input type="checkbox" id="th" name="contact_best_day" value="th">
-          <label for="th">Th</label>
-
-          <input type="checkbox" id="f" name="contact_best_day" value="f">
-          <label for="f">F</label>
-        </section>
-        <br>
-        <section class="send_request">
-          <input type="submit" value="Send Request">
-        </section>
-      </form>
+              </div>
+          </div>
+          <div class="">
+            <div class="col-12">
+              <input class="btn" type="submit" value="Send Request">
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
     <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
