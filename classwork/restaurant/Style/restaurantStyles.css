@@ -25,9 +25,16 @@ body {
   color: #086788;
 }
 
-.navbar-brand span, h2 span {
+.navbar-brand span, h2 span, h1 span {
   font-family: 'Pushster', cursive;
   color: #086788;
+}
+
+  h1 {
+   background-color: #f0c808;
+  font-size: 100px;
+  font-family: 'Source Serif 4', Georgia, serif;
+  text-align: center;
 }
 
 body h2 {
@@ -38,9 +45,7 @@ body h2 {
 
 
 
-#right-menu h3, #middle-menu h3, #left-menu h3 {
-  font-size: 30px
-}
+
 
 /*font styling*/
 #description p {
@@ -66,7 +71,7 @@ body h2 {
 }
 
 
-.col- p {
+.col- p, col-4 {
   font-family: 'Source Serif 4', Georgia, serif;
   font-size: 20px;
   color: #086788;
@@ -112,8 +117,6 @@ nav a:hover {
 .col- {
   background-color: #f2f4f3;
   border: dashed #086788;
-
-
 }
 
 
@@ -151,7 +154,17 @@ label{
 
 }
 
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+  margin-top: 10px;
+}
 
+thead {
+  background-color: #086788;
+  font-family: 'Pushster', cursive;
+  color:#f0c808;
+}
 
 #info {
   resize: both;
