@@ -14,6 +14,12 @@ nav, footer {
   text-align: center;
 }
 
+.navbar {
+position: -webkit-sticky;
+position: sticky;
+top: 20px;
+}
+
 body {
   background-color: #f2f4f3;
 
@@ -30,22 +36,20 @@ body {
   color: #086788;
 }
 
-  h1 {
-   background-color: #f0c808;
+h1 {
+
   font-size: 100px;
   font-family: 'Source Serif 4', Georgia, serif;
   text-align: center;
 }
+
+
 
 body h2 {
   font-size: 50px;
   text-align: center;
   font-family: 'Source Serif 4', Georgia, serif;
 }
-
-
-
-
 
 /*font styling*/
 #description p {
@@ -79,10 +83,10 @@ body h2 {
 }
 
 .col- h3 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
-  .col- h3, .container h1 {
+  .col- h3, .container h1, .container-fluid h1 {
   font-family: 'Pushster', cursive;
   color: #086788;
   text-align: center;
@@ -101,25 +105,18 @@ nav .nav-link, .btn {
 }
 
 
-
 nav a:hover {
-  color: #f2f4f3;
   font-weight: bolder;
 }
 
 
-
 /* menu css*/
-
-
-
 
 .col- {
   background-color: #f2f4f3;
   border: dashed #086788;
+
 }
-
-
 
 
 .col-6 #slogan {
@@ -142,7 +139,14 @@ footer p {
   line-height: 1.5;
 }
 
-.container {
+.container, #jumbo {
+  background-color: #f0c808;
+  border-radius: 5px;
+  margin-top: 100px;
+  margin: 0 auto;
+}
+
+ #jumbo {
   background-color: #f0c808;
   border-radius: 5px;
   margin-top: 100px;
